@@ -19,7 +19,7 @@ def load_original_data():
         return None
 #country_iso_codes = load_original_data()
 
-country_iso_codes = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv")
+#country_iso_codes = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv")
 
 # Function to load the CSV file
 #@st.cache_data
@@ -27,6 +27,6 @@ def load_data(file):
     data = pd.read_csv(file)
     return data
 
-#country_iso_codes = load_data('https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv')
+country_iso_codes = load_data('https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv')
 st.write(country_iso_codes)
 #
