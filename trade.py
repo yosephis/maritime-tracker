@@ -8,7 +8,7 @@ import time
 # Incorporate Comtrade Data Availability Tracker
 
 st.title("Merchandise Trade Portfolio for {0}".format(st.session_state.iso_country))
-st.sidebar.markdown("International Merchandise Trade Portfolios Sourced from the CEPII BACI Dataset.")
+st.sidebar.markdown("International Merchandise Trade Portfolios Sourced from UNCTAD's Trade-and-Transport Database.")
 
 # Consider Imports or Exports?
 I_X = st.segmented_control(
@@ -41,55 +41,51 @@ if I_X == "Exports":
     if usd_t == "Value, $":
         st.header("Top Export Trade Flows by Value")
         tr_profile = "X_tr_usd"
-        baci_tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
-        merch_trade_vis(baci_tr.iloc[:25], "clean_desc", "USD")
-        #st.write(baci_tr.iloc[:5][["clean_desc", "USD"]])
+        merch_trade_vis(tr.iloc[:25], "clean_desc", "USD")
     else:
         st.header("Top Export Trade Flows by Weight")
         tr_profile = "X_tr_t"
-        baci_tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
-        merch_trade_vis(baci_tr.iloc[:25], "clean_desc", "tonne")
-        #st.write(baci_tr.iloc[:5][["clean_desc", "tonne"]])
+        merch_trade_vis(tr.iloc[:25], "clean_desc", "tonne")
 
-    download_as_csv(baci_tr, "Top Export Trade Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(tr, "Top Export Trade Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
     # Top Commodity Flows
     if usd_t == "Value, $":
         st.header("Top Export Commodity Flows by Value")
         co_profile = "X_co_usd"
-        baci_co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(baci_co.iloc[:25], "description", "USD")
-        #st.write(baci_co.iloc[:5][["HS2", "description", "USD"]])
+        merch_trade_vis(co.iloc[:25], "description", "USD")
     else:
         st.header("Top Export Commodity Flows by Weight")
         co_profile = "X_co_t"
-        baci_co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(baci_co.iloc[:25], "description", "tonne")
-        #st.write(baci_co.iloc[:5][["HS2", "description", "tonne"]])
+        merch_trade_vis(co.iloc[:25], "description", "tonne")
+        #st.write(co.iloc[:5][["HS2", "description", "tonne"]])
 
-    download_as_csv(baci_co, "Top Export Commodity Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(co, "Top Export Commodity Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
     # Top Partner Economies
     if usd_t == "Value, $":
         st.header("Top Export Partner Countries by Value")
         pa_profile = "X_pa_usd"
-        baci_pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
-        merch_trade_vis(baci_pa.iloc[:25], "imp_name", "USD")
-        #st.write(baci_pa.iloc[:5][["imp_name", "USD"]])
+        merch_trade_vis(pa.iloc[:25], "imp_name", "USD")
     else:
         st.header("Top Export Partner Countries by Weight")
         pa_profile = "X_pa_t"
-        baci_pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
-        merch_trade_vis(baci_pa.iloc[:25], "imp_name", "tonne")
-        #st.write(baci_pa.iloc[:5][["imp_name", "tonne"]])
+        merch_trade_vis(pa.iloc[:25], "imp_name", "tonne")
+        #st.write(pa.iloc[:5][["imp_name", "tonne"]])
 
-    download_as_csv(baci_pa, "Top Export Partner Countries - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(pa, "Top Export Partner Countries - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
 
 ### IMPORTS ###
@@ -98,62 +94,56 @@ else:
     if usd_t == "Value, $":
         st.header("Top Import Trade Flows by Value")
         tr_profile = "I_tr_usd"
-        baci_tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
-        merch_trade_vis(baci_tr.iloc[:25], "clean_desc", "USD")
-        #st.write(baci_tr.iloc[:5][["clean_desc", "USD"]])
+        merch_trade_vis(tr.iloc[:25], "clean_desc", "USD")
     else:
         st.header("Top Import Trade Flows by Weight")
         tr_profile = "I_tr_t"
-        baci_tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
-        merch_trade_vis(baci_tr.iloc[:25], "clean_desc", "tonne")
-        #st.write(baci_tr.iloc[:5][["clean_desc", "tonne"]])
+        merch_trade_vis(tr.iloc[:25], "clean_desc", "tonne")
 
-    download_as_csv(baci_tr, "Top Import Trade Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(tr, "Top Import Trade Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
     # Top Commodity Flows
     if usd_t == "Value, $":
         st.header("Top Import Commodity Flows by Value")
         co_profile = "I_co_usd"
-        baci_co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(baci_co.iloc[:25], "description", "USD")
-        #st.write(baci_co.iloc[:5][["HS2", "description", "USD"]])
+        merch_trade_vis(co.iloc[:25], "description", "USD")
     else:
         st.header("Top Import Commodity Flows by Weight")
         co_profile = "I_co_t"
-        baci_co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(baci_co.iloc[:25], "description", "tonne")
-        #st.write(baci_co.iloc[:5][["description", "tonne"]])
+        merch_trade_vis(co.iloc[:25], "description", "tonne")
 
-    download_as_csv(baci_co, "Top Import Commodity Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(co, "Top Import Commodity Flows - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
     # Top Partner Economies
     if usd_t == "Value, $":
         st.header("Top Import Partner Countries by Value")
         pa_profile = "I_pa_usd"
-        baci_pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
-        merch_trade_vis(baci_pa.iloc[:25], "exp_name", "USD")
-        #st.write(baci_pa.iloc[:5][["exp_name", "USD"]])
+        merch_trade_vis(pa.iloc[:25], "exp_name", "USD")
     else:
         st.header("Top Import Partner Countries by Weight")
         pa_profile = "I_pa_t"
-        baci_pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
-        merch_trade_vis(baci_pa.iloc[:25], "exp_name", "tonne")
-        #st.write(baci_pa.iloc[:5][["exp_name", "tonne"]])
+        merch_trade_vis(pa.iloc[:25], "exp_name", "tonne")
 
-    download_as_csv(baci_pa, "Top Import Partner Countries - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
+    download_as_csv(pa, "Top Import Partner Countries - {0} ({1}).csv".format(st.session_state.iso_country, st.session_state.iso_code))
 
 
 st.header("A note on Quality Assurance")
-st.markdown(" - It's important to note that the CEPII BACI dataset is fundamentally based on Comtrade data.")
-st.markdown(" - However the quality of data hosted on Comtrade is highly variable depending on the country and region.")
+st.markdown(" - It's important to note that UNCTAD's Trade-and-Transport Database is fundamentally based on Comtrade data.")
+st.markdown(" - The quality of data hosted on Comtrade is highly variable depending on the country and region.")
 st.markdown(" - Presented below is the Comtrade contribution record for the selected country of interest over the decade from 2014-23.")
-st.markdown(" - Please bear this information in-mind when exploring the trade data - merchandise trade statistics will be more reliable for countries that have provided their data more often over recent years.")
+st.markdown(" - Please bear this information in-mind when exploring the trade data - merchandise trade statistics will be more reliable for countries that have provided their data often over recent years.")
 
 by_country_contrib_record_v1 = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/by_country_contrib_record_v1.csv")
 #st.write(by_country_contrib_record_v1)
