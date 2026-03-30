@@ -17,5 +17,5 @@ country_iso_codes = pd.read_csv("https://raw.githubusercontent.com/james-stewart
 #country_iso_codes = pd.read_csv("/country_iso_codes.csv")#, usecols=country_iso_codes_cols, dtype=country_iso_codes_dtype).rename(columns=country_iso_codes_renames)
 #country_iso_codes.loc[country_iso_codes.iso_country == "Namibia", "iso_2"] = "NA"
 
-st.write(country_iso_codes)
+st.write(country_iso_codes.head())
 #
