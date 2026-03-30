@@ -4,15 +4,9 @@ from io import StringIO
 import streamlit as st
 st.header("Welcome to the Homepage of the International Shipping Dashboard 🏡")
 
-
-# Function to load the CSV file
-#@st.cache_data(scope="session")
-#def load_data(file_dir):
-#    data_dir = "https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/"
-#    return pd.read_csv(data_dir + file_dir)
-
-#country_iso_codes = load_data('datasets/dom_inv_by_vess_type.csv')
-
+country_iso_codes_cols = ["name", "alpha-2", "alpha-3", "country-code"]
+country_iso_codes_dtype = {"alpha-2":str, "alpha-3":str, "country-code":str}
+country_iso_codes_renames = {"name":"iso_country", "alpha-2":"iso_2", "alpha-3":"iso_3", "country-code":"iso_code"}
 country_iso_codes = pd.read_csv(
   "https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv",
   usecols=country_iso_codes_cols, 
