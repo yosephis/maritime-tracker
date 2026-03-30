@@ -18,8 +18,8 @@ country_iso_codes.loc[country_iso_codes.iso_country == "Namibia", "iso_2"] = "NA
 
 country_choice = st.selectbox(
     "For which country would you like to statistics related to international shipping, merchandise trade and MTM impact tracking?",
-    (country_iso_codes.iso_country.unique(),
-    index=2))
+    country_iso_codes.iso_country.unique(),
+    index=2)
 
 # set as global variable
 st.session_state.iso_country = country_choice
