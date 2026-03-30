@@ -8,7 +8,7 @@ trade = st.Page("trade.py", title="Merchandise Trade Portfolios", icon="📦")
 impact_tracking = st.Page("impact_tracking.py", title="Impact Tracking Results", icon="💵")
 
 # Set up navigation
-pg = st.navigation([main, inventories])#, trade, impact_tracking]) #, example_page])
+pg = st.navigation([main, inventories, trade, impact_tracking])
 
 # Run the selected page
 pg.run()
