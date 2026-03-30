@@ -1,0 +1,189 @@
+iso_2,iso_3,iso_code,reporterDesc,region,region_wb,status,income,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023
+AF,AFG,4.0,Afghanistan,asia,sa,sids_ldcs,low_income,True,True,True,True,True,True,False,False,False,False
+AL,ALB,8.0,Albania,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+DZ,DZA,12.0,Algeria,africa,mena,developing_minus,low_mid_income,True,True,True,True,False,False,False,False,False,False
+AD,AND,20.0,Andorra,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+AO,AGO,24.0,Angola,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+AG,ATG,28.0,Antigua and Barbuda,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+AR,ARG,32.0,Argentina,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+AM,ARM,51.0,Armenia,asia,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+AW,ABW,533.0,Aruba,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+AU,AUS,36.0,Australia,oceania,eap,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+AT,AUT,40.0,Austria,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+AZ,AZE,31.0,Azerbaijan,asia,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BS,BHS,44.0,Bahamas,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+BH,BHR,48.0,Bahrain,asia,mena,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+BD,BGD,50.0,Bangladesh,asia,sa,sids_ldcs,low_mid_income,False,True,False,False,False,False,False,False,False,False
+BB,BRB,52.0,Barbados,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+BY,BLR,112.0,Belarus,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,False,False
+BE,BEL,56.0,Belgium,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+BZ,BLZ,84.0,Belize,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BJ,BEN,204.0,Benin,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+BM,BMU,60.0,Bermuda,americas,na,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+BO,BOL,68.0,Bolivia (Plurinational State of),americas,lac,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+BA,BIH,70.0,Bosnia Herzegovina,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BW,BWA,72.0,Botswana,africa,ssa,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BR,BRA,76.0,Brazil,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BN,BRN,96.0,Brunei Darussalam,asia,eap,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+BG,BGR,100.0,Bulgaria,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+BF,BFA,854.0,Burkina Faso,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+BI,BDI,108.0,Burundi,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,False
+CV,CPV,132.0,Cabo Verde,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+KH,KHM,116.0,Cambodia,asia,eap,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+CM,CMR,120.0,Cameroon,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,False,False
+CA,CAN,124.0,Canada,americas,na,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+KY,CYM,136.0,Cayman Isds,americas,lac,sids_ldcs,high_income,False,True,False,False,False,False,True,True,True,True
+CF,CAF,140.0,Central African Rep.,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+CL,CHL,152.0,Chile,americas,lac,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+CN,CHN,156.0,China,asia,eap,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+CO,COL,170.0,Colombia,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+KM,COM,174.0,Comoros,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,False,False
+CG,COG,178.0,Congo,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,False
+CR,CRI,188.0,Costa Rica,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+HR,HRV,191.0,Croatia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+CU,CUB,192.0,Cuba,americas,lac,sids_ldcs,upp_mid_income,False,False,True,True,True,True,True,True,True,False
+CW,CUW,531.0,Curaçao,americas,lac,sids_ldcs,high_income,False,False,False,True,True,True,True,False,False,False
+CY,CYP,196.0,Cyprus,asia,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+CZ,CZE,203.0,Czechia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+CI,CIV,384.0,Côte d'Ivoire,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+CD,COD,180.0,Dem. Rep. of the Congo,africa,ssa,sids_ldcs,low_income,False,True,True,True,True,True,True,True,True,True
+DK,DNK,208.0,Denmark,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+DJ,DJI,262.0,Djibouti,africa,mena,sids_ldcs,low_mid_income,False,False,False,False,False,False,False,True,True,True
+DM,DMA,212.0,Dominica,americas,lac,sids_ldcs,upp_mid_income,False,False,True,True,True,True,True,True,True,True
+DO,DOM,214.0,Dominican Rep.,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+EC,ECU,218.0,Ecuador,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+EG,EGY,818.0,Egypt,africa,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+SV,SLV,222.0,El Salvador,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+EE,EST,233.0,Estonia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+SZ,SWZ,748.0,Eswatini,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+ET,ETH,231.0,Ethiopia,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+FJ,FJI,242.0,Fiji,oceania,eap,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+FI,FIN,246.0,Finland,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+PF,PYF,258.0,French Polynesia,oceania,eap,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+GA,GAB,266.0,Gabon,africa,ssa,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+GM,GMB,270.0,Gambia,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+GE,GEO,268.0,Georgia,asia,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+DE,DEU,276.0,Germany,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+GH,GHA,288.0,Ghana,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,False,True,True,True
+GR,GRC,300.0,Greece,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+GD,GRD,308.0,Grenada,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+GT,GTM,320.0,Guatemala,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+GN,GIN,324.0,Guinea,africa,ssa,sids_ldcs,low_mid_income,True,True,True,False,False,False,False,False,False,False
+GW,GNB,624.0,Guinea-Bissau,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,False,False,False,False,False
+GY,GUY,328.0,Guyana,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+HN,HND,340.0,Honduras,americas,lac,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,False,True
+HU,HUN,348.0,,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+IS,ISL,352.0,Iceland,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+ID,IDN,360.0,Indonesia,asia,eap,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+IR,IRN,364.0,Iran,asia,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,False
+IQ,IRQ,368.0,Iraq,asia,mena,developing_minus,upp_mid_income,True,True,True,False,False,False,False,False,False,False
+IE,IRL,372.0,Ireland,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+IL,ISR,376.0,Israel,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+IT,ITA,380.0,Italy,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+JM,JAM,388.0,Jamaica,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+JP,JPN,392.0,Japan,asia,eap,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+JO,JOR,400.0,Jordan,asia,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+KZ,KAZ,398.0,Kazakhstan,asia,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+KE,KEN,404.0,Kenya,africa,ssa,developing_minus,low_mid_income,False,True,True,True,True,True,True,True,True,True
+KI,KIR,296.0,Kiribati,oceania,eap,sids_ldcs,low_mid_income,True,True,True,True,True,False,True,True,False,False
+KW,KWT,414.0,Kuwait,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+KG,KGZ,417.0,Kyrgyzstan,asia,euca,developed_plus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+LA,LAO,418.0,Lao People's Dem. Rep.,asia,eap,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,False,False
+LV,LVA,428.0,Latvia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+LB,LBN,422.0,Lebanon,asia,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+LS,LSO,426.0,Lesotho,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+LR,LBR,430.0,Liberia,africa,ssa,sids_ldcs,low_income,False,False,False,True,True,True,True,True,True,True
+LY,LBY,434.0,Libya,africa,mena,developing_minus,upp_mid_income,False,False,True,True,True,True,False,False,False,False
+LT,LTU,440.0,Lithuania,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+LU,LUX,442.0,Luxembourg,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+MG,MDG,450.0,Madagascar,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+MW,MWI,454.0,Malawi,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+MY,MYS,458.0,Malaysia,asia,eap,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+MV,MDV,462.0,Maldives,asia,sa,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+ML,MLI,466.0,Mali,africa,ssa,sids_ldcs,low_income,False,False,True,True,True,True,False,False,False,False
+MT,MLT,470.0,Malta,europe,mena,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+MR,MRT,478.0,Mauritania,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+MU,MUS,480.0,Mauritius,africa,ssa,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+MX,MEX,484.0,Mexico,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+MN,MNG,496.0,Mongolia,asia,eap,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,False
+ME,MNE,499.0,Montenegro,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+MS,MSR,500.0,Montserrat,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+MA,MAR,504.0,Morocco,africa,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+MZ,MOZ,508.0,Mozambique,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+MM,MMR,104.0,Myanmar,asia,eap,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+,NAM,516.0,Namibia,africa,ssa,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+NP,NPL,524.0,Nepal,asia,sa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,False
+NL,NLD,528.0,Netherlands,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+NC,NCL,540.0,New Caledonia,oceania,eap,sids_ldcs,high_income,True,True,False,False,False,False,False,False,False,False
+NZ,NZL,554.0,New Zealand,oceania,eap,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+NI,NIC,558.0,Nicaragua,americas,lac,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+NE,NER,562.0,Niger,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+NG,NGA,566.0,Nigeria,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+MK,MKD,807.0,North Macedonia,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+OM,OMN,512.0,Oman,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+PK,PAK,586.0,Pakistan,asia,sa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+PW,PLW,585.0,Palau,oceania,eap,sids_ldcs,upp_mid_income,True,True,True,True,True,False,False,False,False,False
+PA,PAN,591.0,Panama,americas,lac,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+PG,PNG,598.0,Papua New Guinea,oceania,eap,sids_ldcs,low_mid_income,False,False,False,False,False,True,True,True,False,False
+PY,PRY,600.0,Paraguay,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+PE,PER,604.0,Peru,americas,lac,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+PH,PHL,608.0,Philippines,asia,eap,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+PL,POL,616.0,Poland,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+PT,PRT,620.0,Portugal,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+QA,QAT,634.0,Qatar,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+KR,KOR,410.0,Rep. of Korea,asia,eap,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+MD,MDA,498.0,Rep. of Moldova,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+RO,ROU,642.0,Romania,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+RU,RUS,643.0,Russian Federation,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,False,False
+RW,RWA,646.0,Rwanda,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,False
+KN,KNA,659.0,,americas,lac,sids_ldcs,high_income,True,True,True,True,False,False,False,False,False,False
+LC,LCA,662.0,Saint Lucia,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,False,False,False
+VC,VCT,670.0,Saint Vincent and the Grenadines,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+WS,WSM,882.0,Samoa,oceania,eap,sids_ldcs,low_mid_income,True,True,True,True,True,True,False,True,True,True
+ST,STP,678.0,Sao Tome and Principe,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+SA,SAU,682.0,Saudi Arabia,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+SN,SEN,686.0,Senegal,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+RS,SRB,688.0,Serbia,europe,euca,developed_plus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+SC,SYC,690.0,Seychelles,africa,ssa,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+SL,SLE,694.0,Sierra Leone,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,False,False,False,False,False
+SG,SGP,702.0,Singapore,asia,eap,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+SK,SVK,703.0,Slovakia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+SI,SVN,705.0,Slovenia,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+SB,SLB,90.0,Solomon Isds,oceania,eap,sids_ldcs,low_mid_income,True,True,True,True,True,False,False,False,False,False
+ZA,ZAF,710.0,South Africa,africa,ssa,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+ES,ESP,724.0,Spain,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+LK,LKA,144.0,Sri Lanka,asia,sa,developing_minus,low_mid_income,True,True,True,True,False,True,True,True,True,True
+PS,PSE,275.0,State of Palestine,asia,mena,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+SD,SDN,729.0,Sudan,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,False,False,False,False,False
+SR,SUR,740.0,Suriname,americas,lac,sids_ldcs,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+SE,SWE,752.0,Sweden,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+TJ,TJK,762.0,Tajikistan,asia,euca,developed_plus,low_mid_income,False,False,True,True,True,True,True,True,True,False
+TH,THA,764.0,Thailand,asia,eap,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+TL,TLS,626.0,Timor-Leste,asia,eap,sids_ldcs,low_mid_income,False,False,False,True,True,True,True,True,True,True
+TG,TGO,768.0,Togo,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+TO,TON,776.0,Tonga,oceania,eap,sids_ldcs,upp_mid_income,True,False,False,False,False,False,False,False,False,False
+TT,TTO,780.0,Trinidad and Tobago,americas,lac,sids_ldcs,high_income,True,True,True,True,True,True,True,True,True,True
+TN,TUN,788.0,Tunisia,africa,mena,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+TR,TUR,792.0,Türkiye,asia,euca,developing_minus,upp_mid_income,True,True,True,True,True,True,True,True,True,True
+UG,UGA,800.0,Uganda,africa,ssa,sids_ldcs,low_income,True,True,True,True,True,True,True,True,True,True
+UA,UKR,804.0,Ukraine,europe,euca,developed_plus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+AE,ARE,784.0,United Arab Emirates,asia,mena,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+GB,GBR,826.0,United Kingdom,europe,euca,developed_plus,high_income,True,True,True,True,True,True,True,True,True,True
+TZ,TZA,834.0,United Rep. of Tanzania,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+UY,URY,858.0,Uruguay,americas,lac,developing_minus,high_income,True,True,True,True,True,True,True,True,True,True
+UZ,UZB,860.0,Uzbekistan,asia,euca,developed_plus,low_mid_income,False,False,False,True,True,True,True,True,True,True
+VN,VNM,704.0,Viet Nam,asia,eap,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,False
+YE,YEM,887.0,Yemen,asia,mena,sids_ldcs,low_income,True,True,False,False,True,True,False,False,False,False
+ZM,ZMB,894.0,Zambia,africa,ssa,sids_ldcs,low_mid_income,True,True,True,True,True,True,True,True,True,True
+ZW,ZWE,716.0,Zimbabwe,africa,ssa,developing_minus,low_mid_income,True,True,True,True,True,True,True,True,True,True
+,,,France,,,,,True,True,True,True,True,True,True,True,True,True
+,,,Greenland,,,,,True,True,True,True,True,False,False,False,False,False
+,,,"China, Hong Kong SAR",,,,,True,True,True,True,True,True,True,True,True,True
+,,,"China, Macao SAR",,,,,True,True,True,True,True,True,True,True,True,True
+,,,,,,,,True,True,True,True,True,True,True,True,True,True
+,,,Norway,,,,,True,True,True,True,True,True,True,True,True,True
+,,,India,,,,,True,True,True,True,True,True,True,True,True,True
+,,,Switzerland,,,,,True,True,True,True,True,True,True,True,True,True
+,,,USA,,,,,True,True,True,True,True,True,True,True,True,True
+,,,European Union,,,,,True,True,True,True,True,True,True,True,True,True
+,,,ASEAN,,,,,True,True,True,True,True,True,True,True,True,False
