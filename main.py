@@ -30,6 +30,6 @@ st.session_state.iso_code = country_iso_codes[(country_iso_codes.iso_country == 
 
 st.header("Take me to...") # Amend with links
 st.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
-#st.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
-#st.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
+st.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
+st.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
 
