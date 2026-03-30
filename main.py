@@ -23,8 +23,6 @@ def load_data(file):
     data = pd.read_csv(file)
     return data
 
-country_iso_codes = load_data(
-    'https://github.com/james-stewart-808/inventory-tracker/blob/1ecaad7e067e4d9016790fabe59a2c5691cfe764/datasets/dom_inv_by_vess_type.csv',
-    on_bad_lines='skip')
+country_iso_codes = load_data('https://github.com/james-stewart-808/inventory-tracker/blob/1ecaad7e067e4d9016790fabe59a2c5691cfe764/datasets/dom_inv_by_vess_type.csv')
 
 #
