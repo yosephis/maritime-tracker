@@ -15,7 +15,8 @@ st.header("Welcome to the Homepage of the International Shipping Dashboard 🏡"
 #country_iso_codes.loc[country_iso_codes.iso_country == "Namibia", "iso_2"] = "NA"
 
 country_iso_codes = pd.read_csv(
-  "https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv"
+  "https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/dom_inv_by_vess_type.csv",
+  usecols=["dom_type"]
 )
 
 st.write(country_iso_codes.head())
