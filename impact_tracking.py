@@ -76,8 +76,8 @@ focus on costs associated with the EU ETS, the IMO NZF, or a combination of them
 ETS_NZF = st.segmented_control(
     "Are you interested in econonic impacts from the EU ETS, IMO NZF, or both?",
     ["EU ETS", "IMO NZF", "Combined"])
-if ETS_NZF == None:
-    ETS_NZF = "EU ETS"
+ETS_NZF = "EU ETS" if ETS_NZF == None
+    
 
 
 if ETS_NZF == "EU ETS":
