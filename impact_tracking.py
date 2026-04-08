@@ -117,13 +117,15 @@ else:
         ]})
     
     st.write(combined_df)
-    
-    alt.Chart(combined_df).mark_line().encode(
-        x=alt.X("Year"),
-        y=alt.Y(
-            alt.repeat("layer"),
-            aggregate="mean",
-            title="Mean of Compliance Costs (US$bn)"),
-        color=alt.datum(alt.repeat("layer")),
-        ).repeat(layer=["EU ETS (US$bn)", "IMO NZF (US$bn)"])
+
+    st.altair_chart(
+        alt.Chart(combined_df).mark_line().encode(
+            x=alt.X("Year"),
+            y=alt.Y(
+                alt.repeat("layer"),
+                aggregate="mean",
+                title="Mean of Compliance Costs (US$bn)"),
+            color=alt.datum(alt.repeat("layer")),
+            ).repeat(layer=["EU ETS (US$bn)", "IMO NZF (US$bn)"])
+    )
     
