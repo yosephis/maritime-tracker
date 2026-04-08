@@ -185,10 +185,10 @@ st.write(by_country_contrib_record_v1.head(4))
 st.write(by_country_contrib_record_v1["2014"])
 st.write(by_country_contrib_record_v1["2014"].value_counts())
 st.write(by_country_contrib_record_v1["2014"].value_counts().values[0])
-#contributed = sum([by_country_contrib_record_v1[x].value_counts()[0] for x in ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]])
-#total = by_country_contrib_record_v1.shape[0] * 10
-#contributed_frac = np.round(100 * contributed / (by_country_contrib_record_v1.shape[0] * 10), 1)
-#st.write("All countries for which data is available: {0} contributions over the last 10 years out of a possible {1}, representing an overall record of {2}%".format(contributed, total, contributed_frac))
+contributed = sum([by_country_contrib_record_v1[x].value_counts().values[0] for x in ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]])
+total = by_country_contrib_record_v1.shape[0] * 10
+contributed_frac = np.round(100 * contributed / (by_country_contrib_record_v1.shape[0] * 10), 1)
+st.write("All countries for which data is available: {0} contributions over the last 10 years out of a possible {1}, representing an overall record of {2}%".format(contributed, total, contributed_frac))
 
 comtrade_rec_cou = by_country_contrib_record_v1[(by_country_contrib_record_v1.iso_code == float(st.session_state.iso_code))]
 if comtrade_rec_cou.shape[0] == 0:
