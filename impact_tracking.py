@@ -96,8 +96,8 @@ elif ETS_NZF == "IMO NZF":
     st.altair_chart(
         alt.Chart(impact_res_ex_so.sort_values(by="NZF Incremental Cost in 2023 (%GDP)", ascending=False).iloc[:25]).mark_bar().encode(
             x=alt.X("Country", sort='-y'),
-            y=alt.Y("NZF Incremental Cost in 2023 (%GDP)"),
-            color="NZF Incremental Cost in 2023 (%GDP)"))
+            y=alt.Y("NZF Incremental Cost in 2030 (%GDP)"),
+            color="NZF Incremental Cost in 2030 (%GDP)"))
 
 else:
 
