@@ -184,7 +184,7 @@ st.subheader("Overall Contribution Record of All States")
 st.write(by_country_contrib_record_v1.head(4))
 st.write(by_country_contrib_record_v1["2014"])
 st.write(by_country_contrib_record_v1["2014"].value_counts())
-st.write(by_country_contrib_record_v1["2014"].value_counts()[0])
+st.write(by_country_contrib_record_v1["2014"].value_counts().values[0])
 #contributed = sum([by_country_contrib_record_v1[x].value_counts()[0] for x in ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]])
 #total = by_country_contrib_record_v1.shape[0] * 10
 #contributed_frac = np.round(100 * contributed / (by_country_contrib_record_v1.shape[0] * 10), 1)
