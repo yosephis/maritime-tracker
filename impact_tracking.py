@@ -120,7 +120,7 @@ else:
     
     st.altair_chart(
         alt.Chart(combined_df).mark_line().encode(
-            x=alt.X("Year", bin=True),#, sort='-y'),
+            x=alt.X("Year"),
             y=alt.Y(
                 alt.repeat("layer"),
                 aggregate="mean",
