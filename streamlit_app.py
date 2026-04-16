@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
 # Define the pages
 main = st.Page("main2.py", title="Home", icon="🏡")
 inventories = st.Page("inventories.py", title="Voyage-based Inventories", icon="🚢")
