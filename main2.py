@@ -10,9 +10,9 @@ import streamlit as st
 #st.sidebar.markdown("---")
 
 # Single navigation section
-st.sidebar.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
-st.sidebar.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
-st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
+#st.sidebar.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
+#st.sidebar.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
+#st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
 
 
 # --------------------------------------------------
