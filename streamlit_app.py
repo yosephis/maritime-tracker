@@ -8,7 +8,7 @@ st.markdown(
     [data-testid="stSidebarNav"]::before {
         content: "";
         display: block;
-        margin: 10px auto 10px auto;
+        margin: 5px auto 5px auto;
         height: 120px;
         width: 180px;
         background-image: url(https://raw.githubusercontent.com/yosephis/maritime-tracker/main/UCL_Logo_S_1C_B_RGB_Energy-Inst.png);
