@@ -10,9 +10,9 @@ st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
 st.sidebar.markdown("---")
 
 # Single navigation section
-st.sidebar.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
-st.sidebar.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
-st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
+#st.sidebar.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
+#st.sidebar.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
+#st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
 
 
 # --------------------------------------------------
