@@ -5,7 +5,7 @@ import streamlit as st
 # SIDEBAR LOGO AND NAVIGATION
 # --------------------------------------------------
 
-st.sidebar.image("images/logo.png", width=200)
+st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
 
 st.sidebar.markdown("### International Shipping Dashboard")
 
