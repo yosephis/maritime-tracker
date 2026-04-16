@@ -11,7 +11,7 @@ st.markdown(
         margin: 20px auto 20px auto;
         height: 120px;
         width: 180px;
-        background-image: url("https://github.com/yosephis/maritime-tracker/blob/59b0eed230ea2b6828a2a63dd9a77258c38e233e/UCL_Logo_S_1C_B_RGB_Energy-Inst.png");
+        background-image: UCL_Logo_S_1C_B_RGB_Energy-Inst.png;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
