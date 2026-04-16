@@ -19,7 +19,7 @@ import streamlit as st
 # MAIN PAGE HEADER
 # --------------------------------------------------
 
-st.title("International Shipping Dashboard")
+st.title("Welcome To The International Shipping Dashboard")
 
 st.caption(
     "Explore global maritime shipping, merchandise trade portfolios, "
