@@ -5,7 +5,7 @@ import streamlit as st
 # SIDEBAR: LOGO AT THE TOP
 # --------------------------------------------------
 
-st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
+#st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
 
 st.sidebar.markdown("---")
 
