@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
+
+st.sidebar.markdown("---")
 
 # Define the pages
 main = st.Page("main2.py", title="Home", icon="🏡")
