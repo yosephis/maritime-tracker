@@ -2,13 +2,14 @@ import pandas as pd
 import streamlit as st
 
 # --------------------------------------------------
-# SIDEBAR LOGO AND NAVIGATION
+# SIDEBAR: LOGO AT THE TOP
 # --------------------------------------------------
 
-st.sidebar.image("UCL_Logo_S_1C_B_RGB_Energy-Inst.png", width=200)
+st.sidebar.image("images/logo.png", width=200)
 
-st.sidebar.markdown("### International Shipping Dashboard")
+st.sidebar.markdown("---")
 
+# Single navigation section
 st.sidebar.page_link("inventories.py", label="Voyage-based Inventories", icon="🚢")
 st.sidebar.page_link("trade.py", label="Merchandise Trade Portfolios", icon="📦")
 st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon="💵")
@@ -18,11 +19,11 @@ st.sidebar.page_link("impact_tracking.py", label="Impact Tracking Results", icon
 # MAIN PAGE HEADER
 # --------------------------------------------------
 
-st.title("Welcome to the International Shipping Dashboard")
+st.title("International Shipping Dashboard")
 
 st.caption(
-    "A platform for analysing global maritime trade flows, shipping inventories, "
-    "and impact tracking across countries."
+    "Explore global maritime shipping, merchandise trade portfolios, "
+    "and economic impact tracking across countries."
 )
 
 st.divider()
@@ -48,14 +49,14 @@ country_iso_codes = pd.read_csv(
 ).rename(columns=country_iso_codes_r)
 
 
-# Fix Namibia ISO code issue
+# Fix Namibia ISO issue
 country_iso_codes.loc[
     country_iso_codes.iso_country == "Namibia", "iso_2"
 ] = "NA"
 
 
 # --------------------------------------------------
-# COUNTRY SELECTION
+# COUNTRY SELECTOR
 # --------------------------------------------------
 
 st.header("Select a Country")
@@ -68,7 +69,7 @@ country_choice = st.selectbox(
 
 
 # --------------------------------------------------
-# STORE SELECTION IN SESSION STATE
+# STORE COUNTRY IN SESSION STATE
 # --------------------------------------------------
 
 st.session_state.iso_country = country_choice
@@ -87,24 +88,19 @@ st.session_state.iso_code = country_iso_codes[
 
 
 # --------------------------------------------------
-# DASHBOARD DESCRIPTION
+# HOMEPAGE DESCRIPTION
 # --------------------------------------------------
 
 st.divider()
 
-st.header("Explore the Dashboard")
-
 st.write(
-    """
-    Use the navigation menu on the left to explore different components of the dashboard:
+"""
+Use the sidebar to explore the different components of the dashboard.
 
-    🚢 **Voyage-based Inventories**  
-    Track shipping voyages and inventory movements.
+🚢 **Voyage-based Inventories** – Track shipping movements and inventories.
 
-    📦 **Merchandise Trade Portfolios**  
-    Explore import and export trade flows by commodity and partner country.
+📦 **Merchandise Trade Portfolios** – Analyse import/export flows by commodity and partner.
 
-    💵 **Impact Tracking Results**  
-    Analyse economic impacts and trade-related metrics.
-    """
+💵 **Impact Tracking Results** – Monitor trade impacts and economic metrics.
+"""
 )
