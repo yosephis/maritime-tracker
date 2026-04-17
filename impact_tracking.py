@@ -134,14 +134,7 @@ if ETS_NZF == "EU ETS":
         "ETS Compliance Costs in 2023 (US$)", "ETS Compliance Costs in 2023 (%GDP)", 
         "ETS Compliance Costs in 2030 (US$)", "ETS Compliance Costs in 2030 (%GDP)"
     ]
-table = impact_res_ex_cou[impact_res_ex_cou_cols].T.copy()
-
-for col in table.columns:
-    table[col] = pd.to_numeric(table[col], errors="ignore")
-
-table = table.round(2)
-
-st.dataframe(table)
+    st.write(impact_res_ex_cou[impact_res_ex_cou_cols].T)
     download_as_csv(
         impact_res_ex_cou[impact_res_ex_cou_cols].T, 
         "EU ETS Impacts for {0} ({1})".format(st.session_state.iso_country, st.session_state.iso_code),
@@ -164,14 +157,7 @@ elif ETS_NZF == "IMO NZF":
         "NZF Incremental Cost in 2040 (US$)", "NZF Incremental Cost in 2040 (%GDP)", 
         "NZF Incremental Cost in 2050 (US$)", "NZF Incremental Cost in 2050 (%GDP)"
     ]
-table = impact_res_ex_cou[impact_res_ex_cou_cols].T.copy()
-
-for col in table.columns:
-    table[col] = pd.to_numeric(table[col], errors="ignore")
-
-table = table.round(2)
-
-st.dataframe(table)
+    st.write(impact_res_ex_cou[impact_res_ex_cou_cols].T)
     download_as_csv(
         impact_res_ex_cou[impact_res_ex_cou_cols].T, 
         "IMO NZF Impacts for {0} ({1})".format(st.session_state.iso_country, st.session_state.iso_code),
