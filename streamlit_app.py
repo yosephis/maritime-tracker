@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-# Inject logo at the top of sidebar
+# logo at the top of sidebar
 st.markdown(
     """
     <style>
