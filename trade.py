@@ -60,13 +60,13 @@ if I_X == "Exports":
     if usd_t == "Value, $":
         st.header("Top Export Commodity Flows by Value")
         co_profile = "X_co_usd"
-        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
         merch_trade_vis(co.iloc[:25], "description", "USD")
     else:
         st.header("Top Export Commodity Flows by Weight")
         co_profile = "X_co_t"
-        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
         merch_trade_vis(co.iloc[:25], "description", "tonne")
         #st.write(co.iloc[:5][["HS2", "description", "tonne"]])
@@ -81,13 +81,13 @@ if I_X == "Exports":
     if usd_t == "Value, $":
         st.header("Top Export Partner Countries by Value")
         pa_profile = "X_pa_usd"
-        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
         merch_trade_vis(pa.iloc[:25], "imp_name", "USD")
     else:
         st.header("Top Export Partner Countries by Weight")
         pa_profile = "X_pa_t"
-        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
         merch_trade_vis(pa.iloc[:25], "imp_name", "tonne")
         #st.write(pa.iloc[:5][["imp_name", "tonne"]])
@@ -105,13 +105,13 @@ else:
     if usd_t == "Value, $":
         st.header("Top Import Trade Flows by Value")
         tr_profile = "I_tr_usd"
-        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
         merch_trade_vis(tr.iloc[:25], "clean_desc", "USD")
     else:
         st.header("Top Import Trade Flows by Weight")
         tr_profile = "I_tr_t"
-        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
         merch_trade_vis(tr.iloc[:25], "clean_desc", "tonne")
 
@@ -125,13 +125,13 @@ else:
     if usd_t == "Value, $":
         st.header("Top Import Commodity Flows by Value")
         co_profile = "I_co_usd"
-        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
         merch_trade_vis(co.iloc[:25], "description", "USD")
     else:
         st.header("Top Import Commodity Flows by Weight")
         co_profile = "I_co_t"
-        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
         merch_trade_vis(co.iloc[:25], "description", "tonne")
 
@@ -145,13 +145,13 @@ else:
     if usd_t == "Value, $":
         st.header("Top Import Partner Countries by Value")
         pa_profile = "I_pa_usd"
-        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
         merch_trade_vis(pa.iloc[:25], "exp_name", "USD")
     else:
         st.header("Top Import Partner Countries by Weight")
         pa_profile = "I_pa_t"
-        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        pa = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, pa_profile), index_col=0)
         merch_trade_vis(pa.iloc[:25], "exp_name", "tonne")
 
