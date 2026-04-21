@@ -40,13 +40,13 @@ if I_X == "Exports":
     if usd_t == "Value, $":
         st.header("Top Export Trade Flows by Value")
         tr_profile = "X_tr_usd"
-        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
         merch_trade_vis(tr.iloc[:25], "clean_desc", "USD")
     else:
         st.header("Top Export Trade Flows by Weight")
         tr_profile = "X_tr_t"
-        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios/{0}/{1}.csv".format(\
+        tr = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, tr_profile), index_col=0)
         merch_trade_vis(tr.iloc[:25], "clean_desc", "tonne")
 
