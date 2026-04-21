@@ -127,13 +127,13 @@ else:
         co_profile = "I_co_usd"
         co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(co.iloc[:25], "description", "USD")
+        merch_trade_vis(co.iloc[:25], "Description", "USD")
     else:
         st.header("Top Import Commodity Flows by Weight")
         co_profile = "I_co_t"
         co = pd.read_csv("https://raw.githubusercontent.com/james-stewart-808/inventory-tracker/main/datasets/portfolios_v0.2/{0}/{1}.csv".format(\
             st.session_state.iso_code, co_profile), index_col=0)
-        merch_trade_vis(co.iloc[:25], "description", "tonne")
+        merch_trade_vis(co.iloc[:25], "Description", "tonne")
 
     download_as_csv(
         co, 
