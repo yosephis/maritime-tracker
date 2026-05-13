@@ -15,7 +15,7 @@ fig=px.bar(filtered_df1, x='year',
            color='Scenario',
            barmode='group',
            )
-
+fig=fig.update_xaxes(showgrid=True)
 # Render the interactive chart inside Streamlit
 st.plotly_chart(fig, width='stretch')
 #width='content'
