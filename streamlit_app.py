@@ -26,7 +26,7 @@ main = st.Page("main2.py", title="Home", icon="🏡")
 inventories = st.Page("inventories.py", title="Voyage-based Inventories", icon="🚢")
 trade = st.Page("trade.py", title="Merchandise Trade Portfolios", icon="📦")
 impact_tracking = st.Page("impact_tracking.py", title="Impact Tracking Results", icon="💵")
-gdp_change = st.Page("gdp_change.py", title="Macroeconomic Impact"
+gdp_change = st.Page("gdp_change.py", title="Macroeconomic Impact")
 # Navigation
 pg = st.navigation([main, inventories, trade, impact_tracking])
 
