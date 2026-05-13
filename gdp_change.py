@@ -14,8 +14,8 @@ fig=px.bar(filtered_df1, x='year',
            y='gdp_per_c', 
            color='Scenario',
            barmode='group',
-           text_auto=True)
+           )
 
 # Render the interactive chart inside Streamlit
-st.plotly_chart(fig, width='stretch')
+st.plotly_chart(fig, width='content')
 #width='content'
