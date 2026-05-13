@@ -17,4 +17,5 @@ fig=px.bar(filtered_df1, x='year',
            text_auto=True)
 
 # Render the interactive chart inside Streamlit
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width='stretch')
+#width='content'
