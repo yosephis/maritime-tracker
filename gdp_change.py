@@ -30,7 +30,7 @@ options = ['SSP1-2.6','SSP2-4.5','SSP3-7.0','SSP5-8.5']
 ssp_selection = st.segmented_control(
            "Which scenario would you like to explore", 
            options,
-           default = 'SSP1-2.6)
+           default = 'SSP1-2.6')
 
 ssp = df_2[df_2['Scenario'] == ssp_selection]
 
