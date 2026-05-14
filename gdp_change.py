@@ -49,6 +49,6 @@ fig_2=fig_2.update_layout(paper_bgcolor="white",title_text = 'Annual GDP Per Cap
 
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
 #height= 700
-st.plotly_chart(fig_2,width='stretch')
+st.plotly_chart(fig_2,width='content')
 
 #width='stretch'        
