@@ -43,7 +43,7 @@ fig_2 = px.choropleth(ssp, locations="iso",
                     range_color = [-9.5,4],
                     #color_continuous_midpoint = 0,
                     color_continuous_scale=px.colors.diverging.RdYlGn)
-fig_2=fig_2.update_layout(margin=dict(l=20,r=0,b=0,t=70,pad=0),paper_bgcolor="white",height= 700,title_text = 'Annual GDP Per Capita % Change',font_size=18)
+fig_2=fig_2.update_layout(paper_bgcolor="white",height= 700,title_text = 'Annual GDP Per Capita % Change',font_size=18)
 
 
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
