@@ -38,8 +38,7 @@ ssp = df_2[df_2['Scenario'] == ssp_selection]
 fig_2 = px.choropleth(ssp, locations="iso",
                     color='gdp_per_c',
                     hover_name="country",
-                    hover_data={
-                    'country': True,'year': True,'gdp_per_c': ':.2f'},
+                    hover_data={'year': True,'gdp_per_c': ':.2f'},
                     #locationmode="country names",
                     animation_frame='year',
                     range_color = [-9.5,2],
