@@ -19,3 +19,35 @@ fig=fig.update_xaxes(showgrid=True)
 # Render the interactive chart inside Streamlit
 st.plotly_chart(fig, width='stretch')
 #width='content'
+
+df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv)
+ssp_1 = df_2[df_2['Scenario'] == 'SSP1-2.6']
+ssp_2 = df_2[df_2['Scenario'] == 'SSP2-4.5']  
+ssp_3 = df_2[df_2['Scenario'] == 'SSP3-7.0']  
+ssp_5 = df_2[df_2['Scenario'] == 'SSP5-8.5']  
+
+options = ['SSP1-2.6','SSP2-4.5','SSP3-7.0','SSP5-8.5']
+ssp_selection = st.segmented_control(
+           "Which scenario would you like to explore", 
+           options,
+           default = 'SSP1-2.6)
+
+ssp = df_2[df_2['Scenario'] == ssp_selection]
+
+fig_2 = px.choropleth(ssp, locations="iso",
+                    color='gdp_per_c',
+                    hover_name="country",
+                    hover_data=['country','year', 'gdp_per_c'],
+                    #locationmode="country names",
+                    animation_frame='year',
+                    range_color = [-9.5,4],
+                    #color_continuous_midpoint = 0,
+                    color_continuous_scale=px.colors.diverging.RdYlGn)
+fig_2=fig_2.update_layout(paper_bgcolor="white",title_text = 'Annual GDP Per Capita % Change',font_size=18)
+
+
+#margin=dict(l=20,r=0,b=0,t=70,pad=0)
+#height= 700
+st.plotly_chart(fig_2, width='stretch')
+
+           
