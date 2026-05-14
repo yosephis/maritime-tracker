@@ -49,7 +49,8 @@ fig_2 = fig_2.update_geos(
     showcoastlines=True,
     coastlinecolor="Black",
     showland=True,
-    fitbounds="locations"
+    fitbounds="locations",
+    projection_type="natural earth"
 )
 
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
