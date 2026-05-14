@@ -45,7 +45,12 @@ fig_2 = px.choropleth(ssp, locations="iso",
                     #color_continuous_midpoint = 0,
                     color_continuous_scale=px.colors.diverging.RdYlGn)
 fig_2=fig_2.update_layout(paper_bgcolor="white",title_text = 'Annual GDP Per Capita % Change',height= 600, width=400,font_size=18)
-
+fig_2 = fig_2.update_geos(
+    showcoastlines=True,
+    coastlinecolor="Black",
+    showland=True,
+    fitbounds="locations"
+)
 
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
 #height= 700
