@@ -3,6 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 
+st.set_page_config(layout='wide')
 st.title('National Macroeconomic Effects of Climate Scenarios')
 
 df_profile = 'gdp_change'
