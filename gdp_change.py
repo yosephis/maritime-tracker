@@ -126,6 +126,7 @@ def make_scenario_chart(data, scenario):
     fig.update_yaxes(
         title='% GDP change',
         ticksuffix='%',
+        dtick=2,
         range=[-max_abs, max_abs]
     )
 
