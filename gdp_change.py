@@ -11,6 +11,16 @@ st.divider()
 df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
+st.plotly_chart(fig_2,width='stretch')
+selected_year = st.slider(
+    "Select Year",
+    min_value=2025,
+    max_value=2100,
+    step=10,
+    value=2050
+)
+
+ssp_year = ssp[ssp['year'] == selected_year]
 filtered_df1 = df_1[df_1['year'].isin([2030,2040,2050,2060,2070,2080,2090,2100])]
 
 df_world = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/world_gdp_change.csv")
@@ -194,6 +204,5 @@ fig_2 = fig_2.update_geos(
 
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
 #height= 700
-st.plotly_chart(fig_2,width='stretch')
 
 #width='stretch'        
