@@ -11,14 +11,33 @@ df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/
 
 filtered_df1 = df_1[df_1['year'].isin([2030,2040,2050,2060,2070,2080,2090,2100])]
 
-fig=px.bar(filtered_df1, x='year',
-           y='gdp_per_c', 
-           color='Scenario',
-           barmode='group',
-           )
-fig=fig.update_xaxes(showgrid=True)
-# Render the interactive chart inside Streamlit
-st.plotly_chart(fig, width='stretch')
+df_world = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/world_gdp_change.csv")
+
+chart_choice = st.segmented_control(
+    label="Would you like to view your country or global GDP losses?",
+    options=["Country", "World"],
+    default="Country"
+)
+
+if chart_choice == 'Country'
+           fig=px.bar(filtered_df1, x='year',
+                      y='gdp_per_c', 
+                      color='Scenario',
+                      barmode='group',
+                      )
+           fig=fig.update_xaxes(showgrid=True)
+           # Render the interactive chart inside Streamlit
+           st.plotly_chart(fig, width='stretch')
+
+else:
+    fig=px.bar(df_world, x='year',
+                      y='gdp_change', 
+                      color='Scenario',
+                      barmode='group',
+                      )
+           fig=fig.update_xaxes(showgrid=True)
+           # Render the interactive chart inside Streamlit
+           st.plotly_chart(fig, width='stretch')       
 #width='content'
 
 df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv")
