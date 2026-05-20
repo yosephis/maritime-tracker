@@ -19,7 +19,7 @@ chart_choice = st.segmented_control(
     default="Country"
 )
 
-if chart_choice == "Country"
+if chart_choice == "Country":
            fig=px.bar(filtered_df1, x='year',
                       y='gdp_per_c', 
                       color='Scenario',
