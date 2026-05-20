@@ -207,7 +207,7 @@ fig_2 = fig_2.update_geos(
     countrycolor="gray",
     fitbounds="locations"
 )
-
+st.plotly_chart(fig_2,width='stretch')
 #margin=dict(l=20,r=0,b=0,t=70,pad=0)
 #height= 700
 
