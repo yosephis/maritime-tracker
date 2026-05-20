@@ -93,6 +93,63 @@ comparison_countries = st.multiselect(
     default=[st.session_state.iso_country]
 )
 
+def make_scenario_chart(data, scenario):
+
+    filtered = data[
+        (data['country'].isin(comparison_countries)) &
+        (data['Scenario'] == scenario)
+    ]
+
+    fig = px.line(
+        filtered,
+        x='year',
+        y='gdp_per_c',
+        color='country',
+        markers=True,
+        title=scenario
+    )
+
+    fig.update_layout(
+        height=350,
+        margin=dict(l=20, r=20, t=50, b=20),
+        legend_title='Country'
+    )
+
+    fig.update_yaxes(
+        title='% GDP change',
+        ticksuffix='%'
+    )
+
+    return fig
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.plotly_chart(
+        make_scenario_chart(df_2, 'SSP1-2.6'),
+        width='stretch'
+    )
+
+with col2:
+    st.plotly_chart(
+        make_scenario_chart(df_2, 'SSP2-4.5'),
+        width='stretch'
+    )
+
+col3, col4 = st.columns(2)
+
+with col3:
+    st.plotly_chart(
+        make_scenario_chart(df_2, 'SSP3-7.0'),
+        width='stretch'
+    )
+
+with col4:
+    st.plotly_chart(
+        make_scenario_chart(df_2, 'SSP5-8.5'),
+        width='stretch'
+    )
+
 options = ['SSP1-2.6','SSP2-4.5','SSP3-7.0','SSP5-8.5']
 ssp_selection = st.segmented_control(
            "Which scenario would you like to explore", 
