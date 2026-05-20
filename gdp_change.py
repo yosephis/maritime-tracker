@@ -80,11 +80,18 @@ fig.update_xaxes(showgrid=True)
 st.plotly_chart(fig, width='stretch')      
 #width='content'
 
+
 df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv")
 ssp_1 = df_2[df_2['Scenario'] == 'SSP1-2.6']
 ssp_2 = df_2[df_2['Scenario'] == 'SSP2-4.5']  
 ssp_3 = df_2[df_2['Scenario'] == 'SSP3-7.0']  
 ssp_5 = df_2[df_2['Scenario'] == 'SSP5-8.5']  
+
+comparison_countries = st.multiselect(
+    "Compare countries",
+    options=sorted(df_2['country'].unique()),
+    default=[st.session_state.iso_country]
+)
 
 options = ['SSP1-2.6','SSP2-4.5','SSP3-7.0','SSP5-8.5']
 ssp_selection = st.segmented_control(
