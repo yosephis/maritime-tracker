@@ -13,31 +13,71 @@ filtered_df1 = df_1[df_1['year'].isin([2030,2040,2050,2060,2070,2080,2090,2100])
 
 df_world = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/world_gdp_change.csv")
 
+# First segmented control
 chart_choice = st.segmented_control(
     label="Would you like to view your country or global GDP losses?",
     options=["Country", "World"],
     default="Country"
 )
 
-if chart_choice == "Country":
-           fig=px.bar(filtered_df1, x='year',
-                      y='gdp_per_c', 
-                      color='Scenario',
-                      barmode='group'
-                      )
-           fig=fig.update_xaxes(showgrid=True)
-           # Render the interactive chart inside Streamlit
-           st.plotly_chart(fig, width='stretch')
+# Second segmented control
+chart_type = st.segmented_control(
+    label="Select chart type",
+    options=["Bar", "Line"],
+    default="Bar"
+)
 
+# COUNTRY CHARTS
+if chart_choice == "Country":
+
+    # Grouped bar chart (filtered data)
+    if chart_type == "Bar":
+        fig = px.bar(
+            filtered_df1,
+            x='year',
+            y='gdp_per_c',
+            color='Scenario',
+            barmode='group'
+        )
+
+    # Line chart (full data)
+    else:
+        fig = px.line(
+            df_1,
+            x='year',
+            y='gdp_per_c',
+            color='Scenario',
+            markers=True
+        )
+
+# WORLD CHARTS
 else:
-           fig=px.bar(df_world, x='Year',
-                      y='gdp_change', 
-                      color='Scenario',
-                      barmode='group'
-                      )
-           fig=fig.update_xaxes(showgrid=True)
-           # Render the interactive chart inside Streamlit
-           st.plotly_chart(fig, width='stretch')       
+
+    # Grouped bar chart
+    if chart_type == "Bar":
+        fig = px.bar(
+            df_world,
+            x='Year',
+            y='gdp_change',
+            color='Scenario',
+            barmode='group'
+        )
+
+    # Line chart
+    else:
+        fig = px.line(
+            df_world,
+            x='Year',
+            y='gdp_change',
+            color='Scenario',
+            markers=True
+        )
+
+# Common formatting
+fig.update_xaxes(showgrid=True)
+
+# Display chart
+st.plotly_chart(fig, width='stretch')      
 #width='content'
 
 df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv")
