@@ -6,6 +6,8 @@ import numpy as np
 st.set_page_config(layout='wide')
 st.title('National Macroeconomic Effects of Climate Scenarios')
 
+st.divider()
+
 df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
@@ -80,7 +82,7 @@ fig.update_xaxes(showgrid=True)
 st.plotly_chart(fig, width='stretch')      
 #width='content'
 
-
+st.divder()
 df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv")
 ssp_1 = df_2[df_2['Scenario'] == 'SSP1-2.6']
 ssp_2 = df_2[df_2['Scenario'] == 'SSP2-4.5']  
@@ -159,6 +161,8 @@ with col4:
         make_scenario_chart(df_2, 'SSP5-8.5'),
         width='stretch'
     )
+
+st.divider()
 
 options = ['SSP1-2.6','SSP2-4.5','SSP3-7.0','SSP5-8.5']
 ssp_selection = st.segmented_control(
