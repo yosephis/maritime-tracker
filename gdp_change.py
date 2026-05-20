@@ -12,15 +12,21 @@ df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
 
-selected_year = st.slider(
-    "Select Year",
-    min_value=2025,
-    max_value=2100,
-    step=10,
-    value=2050
+preset = st.selectbox(
+    "Time Horizon",
+    ["Full range", "Near term", "Mid century", "End century"]
 )
 
-ssp_year = ssp[ssp['year'] == selected_year]
+if preset == "Near term":
+    year_range = (2030, 2050)
+elif preset == "Mid century":
+    year_range = (2050, 2070)
+elif preset == "End century":
+    year_range = (2070, 2100)
+else:
+    year_range = (2030, 2100)
+
+#ssp_year = ssp[ssp['year'] == selected_year]
 filtered_df1 = df_1[df_1['year'].isin([2030,2040,2050,2060,2070,2080,2090,2100])]
 
 df_world = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/world_gdp_change.csv")
