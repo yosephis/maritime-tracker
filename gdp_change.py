@@ -82,7 +82,8 @@ fig.update_xaxes(showgrid=True)
 st.plotly_chart(fig, width='stretch')      
 #width='content'
 
-st.divder()
+st.divider()
+
 df_2 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/country_gdp.csv")
 ssp_1 = df_2[df_2['Scenario'] == 'SSP1-2.6']
 ssp_2 = df_2[df_2['Scenario'] == 'SSP2-4.5']  
