@@ -105,7 +105,7 @@ def make_scenario_chart(data, scenario):
         x='year',
         y='gdp_per_c',
         color='country',
-        markers=True,
+        #markers=True,
         title=scenario
     )
 
