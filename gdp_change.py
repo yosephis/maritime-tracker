@@ -105,7 +105,7 @@ def make_scenario_chart(data, scenario):
         x='year',
         y='gdp_per_c',
         color='country',
-        markers=True,
+        #markers=True,
         title=scenario
     )
 
@@ -118,6 +118,12 @@ def make_scenario_chart(data, scenario):
     fig.update_yaxes(
         title='% GDP change',
         ticksuffix='%'
+    )
+    max_abs = max(abs(df_2['gdp_per_c'].min()),
+              abs(df_2['gdp_per_c'].max()))
+
+    fig.update_yaxes(
+        range=[-max_abs, max_abs]
     )
 
     return fig
