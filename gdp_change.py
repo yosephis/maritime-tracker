@@ -23,17 +23,17 @@ if chart_choice == 'Country'
            fig=px.bar(filtered_df1, x='year',
                       y='gdp_per_c', 
                       color='Scenario',
-                      barmode='group',
+                      barmode='group'
                       )
            fig=fig.update_xaxes(showgrid=True)
            # Render the interactive chart inside Streamlit
            st.plotly_chart(fig, width='stretch')
 
 else:
-    fig=px.bar(df_world, x='year',
+           fig=px.bar(df_world, x='Year',
                       y='gdp_change', 
                       color='Scenario',
-                      barmode='group',
+                      barmode='group'
                       )
            fig=fig.update_xaxes(showgrid=True)
            # Render the interactive chart inside Streamlit
