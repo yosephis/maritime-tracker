@@ -195,7 +195,7 @@ fig_2 = px.choropleth(ssp, locations="iso",
                     hover_data={'year': True,'gdp_per_c': ':.2f'},
                     #locationmode="country names",
                     animation_frame='year',
-                    range_color = [-9.5,2],
+                    range_color = [-9.5,4],
                     #color_continuous_midpoint = 0,
                     color_continuous_scale=px.colors.diverging.RdYlGn)
 fig_2=fig_2.update_layout(paper_bgcolor="white",title_text = 'Annual GDP Per Capita % Change',height= 600, width=400,font_size=18)
