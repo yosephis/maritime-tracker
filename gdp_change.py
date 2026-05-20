@@ -11,7 +11,7 @@ st.divider()
 df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
-st.plotly_chart(fig_2,width='stretch')
+
 selected_year = st.slider(
     "Select Year",
     min_value=2025,
