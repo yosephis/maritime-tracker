@@ -92,6 +92,14 @@ comparison_countries = st.multiselect(
     options=sorted(df_2['country'].unique()),
     default=[st.session_state.iso_country]
 )
+selected_data = df_2[
+    df_2['country'].isin(comparison_countries)
+]
+
+max_abs = max(
+    abs(selected_data['gdp_per_c'].min()),
+    abs(selected_data['gdp_per_c'].max())
+)
 
 def make_scenario_chart(data, scenario):
 
@@ -117,12 +125,7 @@ def make_scenario_chart(data, scenario):
 
     fig.update_yaxes(
         title='% GDP change',
-        ticksuffix='%'
-    )
-    max_abs = max(abs(df_2['gdp_per_c'].min()),
-              abs(df_2['gdp_per_c'].max()))
-
-    fig.update_yaxes(
+        ticksuffix='%',
         range=[-max_abs, max_abs]
     )
 
