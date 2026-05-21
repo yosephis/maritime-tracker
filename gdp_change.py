@@ -8,25 +8,11 @@ st.title('National Macroeconomic Effects of Climate Scenarios')
 
 st.divider()
 
+st.markdown("Using Data from Kahn et al. (2021) and Mohaddes and Raissi (2024) we are able to show country-specific annual GDP per-capita losses by country from global warming  
 df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
 
-preset = st.selectbox(
-    "Time Horizon",
-    ["Full range", "Near term", "Mid century", "End century"]
-)
-
-if preset == "Near term":
-    year_range = (2030, 2050)
-elif preset == "Mid century":
-    year_range = (2050, 2070)
-elif preset == "End century":
-    year_range = (2070, 2100)
-else:
-    year_range = (2030, 2100)
-
-#ssp_year = ssp[ssp['year'] == selected_year]
 filtered_df1 = df_1[df_1['year'].isin([2030,2040,2050,2060,2070,2080,2090,2100])]
 
 df_world = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/world_gdp_change.csv")
