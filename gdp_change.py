@@ -8,7 +8,7 @@ st.title('National Macroeconomic Effects of Climate Scenarios')
 
 st.divider()
 
-st.markdown("Using Data from Kahn et al. (2021) and Mohaddes and Raissi (2024) we are able to show country-specific annual GDP per-capita losses by country from global warming  
+st.markdown("Using Data from Kahn et al. (2021) and Mohaddes and Raissi (2024) we are able to show country-specific annual GDP per-capita losses by country from global warming")  
 df_profile = 'gdp_change'
 df_1 = pd.read_csv("https://raw.githubusercontent.com/yosephis/maritime-tracker/main/datasets/portfolios/{0}/{1}.csv".format(st.session_state.iso_code, df_profile))
 
